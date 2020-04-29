@@ -7,11 +7,11 @@ agent any
             stage('clean the code ')
             {
                 steps{
-                    echo 'mvn clean'
+                    sh 'mvn clean'
                 }
             }
 
-            stage('unit testing')
+           /* stage('unit testing')
             {
                 steps{
                     echo 'mvn test'
@@ -23,6 +23,6 @@ agent any
                     echo 'mvn package'
                     
                 }
-            }
+            }*/
     }
 }
